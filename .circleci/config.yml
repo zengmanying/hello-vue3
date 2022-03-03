@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build:
+  say-hello:
     docker:
       - image: circleci/node:10
     branches:
@@ -17,13 +17,17 @@ jobs:
       - run:
           name: Install
           command: npm install
-      -save-cache:
+      - save-cache:
           path:
             - node_moudules
           key: dependencies-
       - run:
           name: Build github pages
           command: npm build         
-      -run:
+      - run:
           name: gh-pages
           command: npm deploy
+workflows:
+  say-hello-workflow:
+    jobs:
+      - say-hello        

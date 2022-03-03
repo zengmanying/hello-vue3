@@ -7,7 +7,6 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "cy:run": "npx cypress run",
-    "debug": "npm cypress open",
     "test": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test serve http://localhost:8080 cy:run"
   },
   "homepage": "https://zengmanying.github.io/hello-vue3",

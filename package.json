@@ -9,7 +9,7 @@
     "cy:run": "npx cypress run",
     "test": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test serve http://localhost:8080 cy:run"
   },
-  "homepage": "https://zengmanying.github.io",
+  "homepage": "https://zengmanying.github.io/hello-vue3",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
